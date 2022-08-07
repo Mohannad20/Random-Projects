@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            .rrA{
+                padding-left: 30cm;
+                padding-top: 0.5cm;
+            }
+            
+            a  {
+                font-family: arial,sans-serif;
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: rgb(40, 40, 255);
+                text-decoration: underline;
+            }
+
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #d93025;
+                margin-left: 35px;
+                font-size: 20px;
+            }
+
+            form {
+                margin-left: 35px;
+                padding-top: 1cm;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .Aae {
+                font-size: 18px;
+                height: 40px;
+            }
+
+            
+            .fOnt {
+                font-size: 13px;
+                display: inline-block;
+                width: 150px;
+                height: 40px;
+            }
+
+            .J0ax {
+                margin-left: 110px;
+                display: inline-block;
+            }
+
+            .tXinput {
+                border-radius: 2px;
+                height: 25px;
+                width: 360px;
+                border: 0.5px solid black;
+                padding: 1px 10px;
+            }
+
+            .Adbar {
+                border-radius: 2px;
+                border: 1px solid #3079ed;
+                margin-left: 497px;
+                margin-top: 20px;
+                background: #4f90f8;
+                color: white;
+                height: 30px;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rrA">
+            <a title="google search" href="index.html">Search</a>
+        </div>
+
+        <h1>Advanced Search</h1>
+        <hr>
+            
+        <form action="https://google.com/search">
+            
+            <div class="Aae">
+                <span>Find pages with</span>
+            </div>
+            
+            <div class="Body1">
+                <div class="fOnt">
+                    <label for="aAda">all these words:</label>
+                </div>
+                <div class="J0ax">
+                    <input type="text" value="" id="aAda" class="tXinput" name="as_q">
+                </div>
+            </div> 
+
+            <div class="Body1">
+                <div class="fOnt">
+                    <label for="aAca">this exact word or phrase:</label>
+                </div>
+                <div class="J0ax">
+                    <input type="text" value="" id="aAca" class="tXinput" name="as_epq">
+                </div>
+            </div>
+
+            <div class="Body1">
+                <div class="fOnt">
+                    <label for="aAea">any of these words:</label>
+                </div>
+                <div class="J0ax">
+                    <input type="text" value="" id="aAea" class="tXinput" name="as_oq">
+                </div>
+            </div>
+
+            <div class="Body1">
+                <div class="fOnt">
+                    <label for="aAfa">none of these words:</label>
+                </div>
+                <div class="J0ax">
+                    <input type="text" value="" id="aAfa" class="tXinput" name="as_eq">
+                </div>
+            </div>
+            
+            <div class="Adbar1">
+                <input type="submit" value="Advanced Search" class="Adbar">
+            </div>
+        </form>
+    </body>
+</html>
