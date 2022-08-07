@@ -1,0 +1,79 @@
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <style>
+
+input[type=text]:focus {
+  border: 3px solid #555; 
+}
+input {
+  width: 80%;
+  margin: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type=button] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  margin: 8px;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 80px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+#login-form-submit{
+    height: 35px;
+    width: 120px;
+    background-color: rgb(110, 110, 228);
+    
+}
+
+</style>
+      
+   </head>
+   <body>   
+      <div class="container">
+
+   
+         <h1>Connexion</h1>
+         
+         <label for="fname">Username:</label><br>
+         <input type="text" id="username" placeholder="Username" /><br />
+         <br>
+         <label for="fname">Password:</label><br>
+         <input type="password" id="password" placeholder="Password"/><br />
+         <br>
+         <input type="submit" value="Login" id="login-form-submit" onclick="login()">
+         
+    
+      </div>
+
+<script language="javascript">
+  
+function login()
+	{
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+
+        if (username == "user" && password == "2000") {
+            window.location.href = "https://www.google.com/";
+
+    }
+        else {
+        alert("the username or the password isn't true.");}
+    }
+
+     </script>
+   </body>
+</html>

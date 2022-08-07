@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<style>
+.answer b {
+  font-weight: bold;
+  position: relative;
+  animation: mymove 1s;
+}
+
+@keyframes mymove {
+  from {left: 500px;}
+  to {left: 0px;}
+}
+.seeanswer{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 16px;
+  border-radius: .5em;
+}
+
+
+.seeanswer:hover{
+  background:#fff;
+  color:#1AAB8A;
+  border: 1px solid ;
+}
+h6{
+  background-color:#F8F8F8;
+  border:solid 1px #DDDDDD;
+  color:#000000;
+  padding:16px;
+  font-size:12pt;
+  font-family:"Courier New",courier, monospace;
+  margin-top:10px;
+  border-radius:4px;
+  border-left:solid 6px #DDDDDD;
+}
+.quiz{
+    margin: 5px;
+    border: solid 1px #165877;
+    border-radius: 5px;
+    padding: 21px;
+    background: linear-gradient(to left,#F5F5F5,#FFFFFF);
+}
+.tquiz{
+    padding: 5px;
+    background-color: #165877;
+    color: #FFFFFF;
+    border-radius: 5px;
+
+    font-size: 18pt;
+    font-weight: bold;
+}
+span#qcm.label-info{
+  background-color: #f47575;
+    display: inline;
+    padding: .2em .6em;
+    font-weight: bold;
+    line-height: 2;
+    color: #fff;
+    text-align: center;
+    border-radius: .25em;
+}
+
+.description, .answer {
+
+    border-color: #001fff47;
+    color: #000;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.description {
+    background-color: #0400ff0d;
+}
+.answer {
+    background-color: #3aaf3e47;
+}
+
+#div-answer{
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;  
+  background-color: #111;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+ a:hover {
+  color: #f1f1f1;
+}
+
+.menu {
+  display:none;
+  text-align: justify;
+}
+
+#Contact{
+  margin-left: 250px !important;
+}
+
+.lettrine {
+  font-size: 35px;
+  color: #8A2BE2;
+  margin-left: 25px;
+  line-height: 1em;
+}
+#Home{
+    display: inline;
+}
+.contenu {
+  margin-left:170px; 
+  padding: 10px 21px; 
+}
+
+.card{
+   margin-left: 21%;
+   margin-top: -30px;
+   width: 35%;
+}
+.container {
+  column-count: 3;
+  column-gap: 150px;
+}
+
+
+</style>
+</head>
+<body id="body" onload="load()">
+
+<div class="sidebar">
+  <a class="a" id="a1" href="#home" onclick="Show('Home','a1')"><i class="bi bi-house-fill"></i> Home</a>
+  <a class="a" id="a2" href="#services" onclick="Show('Services','a2')"><i class="bi bi-gear"></i> Services</a>
+  <a class="a" id="a3" href="#clients" onclick="Show('Clients','a3')"><i class="bi bi-person-fill"></i> Quiz</a>
+  <a class="a" id="a4" href="#contact" onclick="Show('Contact','a4')"><i class="bi bi-envelope"></i> Contact</a>
+</div>
+<div class="contenu">
+
+<div class="menu" id="Home">
+    <h2> Home </h2>
+  <p><span class="lettrine">D</span>ans les textes non linéaires, généralement tabulaires, il est difficile de parler de paragraphes : 
+      la page est composée de tables ou de tableaux, de graphes et d'histogrammes, d'images (de photographies, de dessins, ou de schémas, etc.), où les informations textuelles figurent dans des pavés de type légende, commentaire, note, etc., chaque segment de texte étant plus ou moins indépendant des autres, et rattaché à un élément non textuel. Il vaut mieux dans ce cas parler de pavé(s), et envisager la composition du document sous l'angle de la topologie (de la mise en page(s))7.</p>
+  
+</div>
+     
+     <div class="menu" id="Services">
+  <h2> Services </h2>
+  <div class="container">
+    <p><span class="lettrine">P</span>ar défaut, il existe un espace entre les cellules de tableau adjacentes, car le mode de bordure par défaut pour les tableaux HTML est separate. </p>
+    <p>Par défaut, il existe un espace entre les cellules de tableau adjacentes, car le mode de bordure par défaut pour les tableaux HTML est separate.il existe un espace entre les cellules de tableau adjacentes il existe un espace entre les cellules de tableau adjacentes il existe un espace entre les cellules de tableau adjacentesil existe un espace entre les cellules de tableau adjacentes </p>
+    <p>Par défaut, il existe un espace entre les cellules de tableau adjacentes, car le mode de bordure par défaut pour les tableaux HTML est separate. il existe un espace entre les cellules de tableau adjacentesil existe un espace entre les cellules de tableau adjacentes il existe un espace entre les cellules de tableau adjacentes il existe un espace entre les cellules de tableau adjacentes</p>   
+  </div>
+  
+</div>
+<div class="menu" id="Clients">
+<div class="quiz">
+  <div class="tquiz">
+    <img src="quiz_ic.png">Quiz <span>(Pour tester vos connaissances)</span>
+  </div>
+  
+  <h6>1. Le cerveau de tout système informatique est _________?</h6>
+  <p><span id="qcm" class="label label-info">A</span> CPU</p>
+  <p><span id="qcm" class="label label-info">B</span> Mémoire</p>
+  <p><span id="qcm" class="label label-info">C</span> Unité de contrôle</p>
+  <p><span id="qcm" class="label label-info">D</span> Unité arithmétique et logique  ALU</p>
+  <p><span id="qcm" class="label label-info">E</span> Aucune de ces réponses n&rsquo;est vraie.</p>
+ 
+  <button class="seeanswer" onclick="ShowAnswer()">Réponse</button>
+         <div id="div-answer">
+                            <div class="answer">
+                              <b><i class="bi bi-check-lg"></i> A </b>
+                            </div>
+                           <div class="description">
+                             <b> Le cerveau de tout système informatique est le CPU (Unité centrale de traitement). 
+                               Le processeur est une puce contenant des millions de transistors.
+                               Le cerveau de tout système informatique est le CPU. 
+                               </b>
+                           </div>
+  
+      </div>
+      </div>
+  </div>
+</div>
+  <div class="menu" id="Contact">
+    <div class="card bg-light mb-3">
+        <div class="card-header bg-success text-white"><i class="bi bi-house-fill"></i> Adresse</div>
+        <div class="card-body">
+            <p>3 rue des far quartier salam</p>
+            <p>80000 AGADIR</p>
+            <p>Maroc</p>
+            <p>Email : email@example.com</p>
+            <p>Tel. +212 641534295</p>
+
+        </div>
+
+    </div> 
+  </div>
+  
+<script>
+    function ShowAnswer() {
+        document.getElementById('div-answer').style.display='inline';
+    }
+    function Show(iddiv,idA) {
+      const a = document.getElementsByClassName('a');
+        a[0].style='none';
+        a[1].style='none';
+        a[2].style='none';
+        a[3].style='none';
+
+      const t = document.getElementsByClassName('menu');
+        t[0].style.display='none';
+        t[1].style.display='none';
+        t[2].style.display='none';
+        t[3].style.display='none';
+
+         document.getElementById(iddiv).style.display="inline";  
+         document.getElementById(idA).style.color="white";
+        }
+        function load(){
+          document.getElementById('a1').style.color="white";
+        }
+    </script>
+</body>
+</html>

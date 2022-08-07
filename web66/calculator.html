@@ -1,0 +1,79 @@
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <style>
+
+input[type=text]:focus {
+  border: 3px solid #555; 
+}
+input[type=text] {
+  width: 80%;
+  margin: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type=button] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  margin: 8px;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 80px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+      </style>
+      <script language="javascript">
+         function operation(op){
+            nombre1=document.calc.nbr1.value;
+            nombre2=document.calc.nbr2.value;
+            switch(op){
+               case "add": resultat=parseFloat(nombre1)+parseFloat(nombre2); break;
+               case "sou": resultat=nombre1-nombre2; break;
+               case "mul": resultat=nombre1*nombre2; break;
+               case "div": {
+                  if(nombre2!=0)
+                     resultat=nombre1/nombre2;
+                  else
+                     resultat="Erreur!";
+                     
+                     break;
+               }   
+               case "fact": 
+               var i ; var fact = 1;
+               for(i = 1; i <= nombre1; i++)
+               fact = fact * i;
+               resultat = fact;
+              
+                
+            }
+            document.calc.res.value=resultat;
+         }
+      </script>
+   </head>
+   <body>   
+      <div class="container">
+      <form name="calc">   
+         <label for="lname">Number 1</label> <input type="text" name="nbr1" /><br />
+         <label for="lname">Number 2</label> <input type="text" name="nbr2" /><br />
+         <input type="button" value="+" onClick="operation('add')" />
+         <input type="button" value="-" onClick="operation('sou')" />
+         <input type="button" value="*" onClick="operation('mul')" />
+         <input type="button" value="/" onClick="operation('div')" />
+         <input type="button" value="!" onClick="operation('fact')" />
+         <br />
+         <label for="lname">Res.calcul </label> <input type="text" name="res" />
+      </form>
+      </div>
+   </body>
+</html>
