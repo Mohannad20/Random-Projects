@@ -2,7 +2,6 @@
 # The Boxes
 #### Video Demo:  [The Boxes (CS50 Final Project)](https://youtu.be/ZGAyNnAqmbE).
 ![Screenshot (2)](https://github.com/Mohannad20/MyProjects/assets/72934299/1c10c9ff-8f33-44fc-81eb-dd5e370f660b)
-![Screenshot (3)](https://github.com/Mohannad20/MyProjects/assets/72934299/8c783163-26e9-4905-a9c5-472973a1813f)
 
 #### Description:
 
@@ -34,6 +33,9 @@ In this project we have those archives:
 -push.lua: A library to make more simple the production of the visual part of your game;
 
 -Truck.lua: The truck script;
+
+![Screenshot (3)](https://github.com/Mohannad20/MyProjects/assets/72934299/8c783163-26e9-4905-a9c5-472973a1813f)
+
 
 #### Control keys:
 
